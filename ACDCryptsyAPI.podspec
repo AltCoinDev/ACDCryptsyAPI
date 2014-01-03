@@ -59,7 +59,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, '5.0'
+  s.platform     = :ios, '6.0'
 
   #  When using multiple platforms
   # s.ios.deployment_target = '5.0'
@@ -72,7 +72,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/AltCoinDev/ACDCryptsyAPI.git", :commit => "9bfae9b5c9377b74312ca97ee69b1e4af1c3427d" }
+  s.source       = { :git => "https://github.com/AltCoinDev/ACDCryptsyAPI.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -83,7 +83,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = 'ACDCryptsyAPI'
+  s.source_files  = 'ACDCryptsyAPI/*'
 
   # s.public_header_files = 'Classes/**/*.h'
 
